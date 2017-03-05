@@ -1,22 +1,192 @@
+GIT BASICS
 # source1 == https://git-scm.com/docs
 # source2 == https://github.com/treehouse-dave/get-acquainted-with-git
 # source3 == http://danielkummer.github.io/git-flow-cheatsheet/
 ##############################################################################
 
-# Useful Configuration Options
+# USEFUL CONFIGURATION OPTIONS 
 # git config --global alias.st status Lets you just type git st whenever you want to see the status of the repo
 # git config --global alias.co checkout Lets you just type git co whenever you want to checkout a branch
 # git config --global alias.ci commit Lets you just type git ci whenever you want run a commit
 # *This just covers some basic Git commands. Doesn't cover remote repos, push or pull
 
-# set up
+# SET UP
 # git --version 
 # git config --global color.ui true
 # git config --global user.name <my_name>
 # git config --global user.email <my_email>
 
+# CREATE
+# Clone an existing repo:
+# $ git clone <address_of_repo>
 
-# Basic Commands
+# Create a new local repo:
+# $ git init 
+
+
+# LOCAL CHANGES
+# Changed files in your working directory:
+# $git status 
+
+# Changes to tracked files:
+# $git diff
+
+# Add all current changes to the next commit:
+# $ git add .
+
+# Add some changes in <fileA>to the next commit:
+# $ git add -p <fileA>
+
+# commit all local changes in tracked files:
+# $ git commit -a
+
+# Commit previously staged changes:
+# $ git commit 
+
+# Change the last commit:
+# Note: Do not ammend published commits.
+# $ git commit --amend 
+
+
+# COMMIT HISTORY 
+# Show all commits, starting with the newest:
+# $ git log 
+
+# Show changes over time for a specific file:
+# $ git log -p <fileA>
+
+# Who chnaged what and when in <fileA>:
+# $ git blame <fileA>
+
+
+# BRANCHES AND TAGS
+# List all existing branches:
+# $ git branch -av 
+
+# Switch HEAD branch: 
+# $ git checkout <branch>
+
+# Cretae a new branch based on your current HEAD:
+# $ git branch <new_branch>
+
+# Create a new tracking branch based on a remote branch :
+# $ git checkout --track <remote/branch>
+
+# Delete a local branch:
+# $ git branch -d <branch>
+
+# Mark the current commit with a tag:
+# $ git tag <tag_name>
+
+
+# UPDATE AND PUBLISH 
+# List all currently configured remotes:
+# $ git remote -v 
+
+# Show information about a remote:
+# $ git remote show <remote>
+
+# Add new remote repo, named <remote>:
+# $ git remote add <short_name> <url>
+
+# Downoading all changes from <remote>, but dont integrate into HEAD:
+# $ git fetch <remote>
+
+# Download changes and directly merge/integrate into HEAD:
+# $ git pull <remote> <branch>
+
+# Publish local changes on a remote:
+# $ git push <remote> <branch>
+
+# Delete a branch on the remote:
+# $ git branch -dr <remote/branch>
+
+# Publish your tags:
+# $ git push --tags 
+
+
+# MERGE AND RELEASE 
+# Merge <branch> into your current HEAD:
+# $ git merge <branch>
+
+# Rebase your current HEAD onto <branch>:
+# Note: Do not rebase published commits!
+# $ git rebase <branch>
+
+# Abort a rebase:
+# $ git rebase --abort
+
+# Continue a rebase after resolving conflicts:
+# $ git rebase --continue 
+
+# Use your configured merge tool to solve conflicts:
+# $ git mergetool
+
+# Use your editor to manually solve conflicts ad (after resolving) mark file as resolved:
+# $ git add <resolved_file>
+# $ git rm <resolved_file>
+
+
+# UNDO 
+# Discard all local changes in your local directory:
+# $ git reset --hard HEAD 
+
+# Discard local changes in a specific file:
+# $ git checkout HEAD <file>
+
+# Revert a commit (by producing a new commit with contrary changes):
+# $ git revert <commit>
+
+# Reset your HEAD pointer to a previous commit and discard all changes since then:
+# $ git reset --hard <commit>
+
+# ...and preserve all changes as unstaged changes:
+# $ git reset <commit>
+
+# .. and preserve uncommitted local changes:
+# $ git reset --keep <commit>
+
+
+
+
+
+
+
+
+
+
+# LOCAL REPOS AND GITHUB
+# 1. To create a new repository on the command line: 
+# echo "# name_of_repo" >> README.md // if you need a readME file
+# git init
+# git add README.md // or whatever file you want to add
+# git commit -m "first commit"
+# git remote add origin https://github.com/suhai/name_of_repo.git
+# git push -u origin master
+
+# 2. To push an existing repository from the command line:
+# git remote add origin https://github.com/suhai/name_of_repo.git
+# git push -u origin master
+# And then you can do whatever commits you wanna do from here
+
+# 3. To delete a git repository, cd into the local repo and delete the .git file with 'rm -rf .git'
+# Then go to github and delete the repo in settings.
+
+# 4. To rename an existing git repo (with both a local and remote address):
+# Go to the repo in gitHub, rename it to the new name under settings.
+# Rename the repo locally, and then set the new url in get with:
+# git remote set-url origin new_url
+# An example of url is https://github.com/suhai/repo-name
+# you can then make a commit and push the commit 
+
+# ON GITHUB:
+# 1. Watch --> This would set github to notify the watcher when any noticeable changes occur within the watched repo or project.
+
+# 2. Star --> This adds the starred repo to the starer's facvorites repos on github to make it easier for that repo to be found in the future.
+
+# 3. Fork --> This creates a clone of the forked repo into the forker's github account. 
+
+# BASIC COMMANDS
 # 1. git init :Creates a new Git repository in the current directory. This is normally used for a directory that has already been created. In addition, a directory named .git is added to the folder. This folder holds all the Git history and information for the repo. To get rid of the repo, just delete the .git folder
 
 # 2. git init <whatever_name_you desire> :Creates a new Git repository named <whatever_name_you desire> with the features of #1 above. This is normally used to start a project from scratch.
@@ -57,7 +227,7 @@
 # 18. git diff -- <path to file/path to directory> :Show differences for specific file or directory
 
 
-# Managing Files and Directories
+# MANAGING FILES AND DIRECTORIES
 # 1. git rm <path/to/file> :Remove a file that's being tracked in the repo. If you haven't yet added the file to staging, this will produce an error. You may need to force the removal if the file is staged but not committed: git rm -f <path/to/file>
 
 # 2. git rm -r <path/to/directory> :Remove a directory's worth of files. Also removes the directory. Directories themselves aren't tracked in Git. You may need to force the remove if a file in the directory is staged but not committed: git rm -rf <path/to/directory>
@@ -85,7 +255,7 @@
 # 9. git merge <name_of_branch> :Return to master branch and merge changes from branch
 
 
-# Getting Out of Changes
+# GETTING OUT OF CHANGES
 # File Fixes
 # 1. git reset HEAD <path/to/file> :Unstage a file. (HEAD represents the current commit)
 
@@ -99,7 +269,7 @@
 
 # 6. git checkout HEAD~1 :is a special commit identifier in git; it brings the previous commit (not the one we just made, but the one before that)
 
-# Undo Commits
+# UNDO COMMITS
 # Be careful with these commands when working on a shared repository -- for example with Github. Resetting commits changes the "history" of the repo -- so only use it to back out of local commits that haven not been pushed to a shared repository.
 
 # 1. git reset --soft HEAD^ :Undo last commit of entire repo, but leave files staged.
@@ -112,14 +282,14 @@
 
 # 5. git reset --hard <sha-of-commit> :Returns files to state they were in after specificed commit
 
-# Finding Differences Between Versions
+# FINDING DIFFERENCES BETWEEN VERSIONS
 # 1. git diff :View differences between current working files and staging area (or if files aren't staged compare working with last commit).
 
 # 2. git diff <path/to/file> :View differences between current working file and staging area (or if file isn't staged compare working with last commit).
 
 # 3. git diff --staged :View differences between staged files and last commit.
 
-# To Review an Older Commit File.
+# TO REVIEW AN OLDER COMMIT FILE
 # 1. Do a 'git log' and determine the commit ID of what you are looking for.
 # 2. Do a 'git checkout <sha-of-commit>'  
 # 3. Do an 'ls' to see the list of files in that 'sha-of-commit'
@@ -127,7 +297,7 @@
 # 5. You could also do a 'git diff <file1_of_sha-of-commitA> <file1_of_sha-of-commitB>' to see the difference between the two versions of the file inside the terminal
 # 6. You could also do a 'git diff <sha-of-commitA> <sha-of-commitB>' to see the difference between the two versions of the commit inside the terminal
 
-# A Simple Workflow
+# A SIMPLE WORKFLOW
 # 1. Don't work on the master branch.
 # 2. Master branch should hold your working, production files. Don't mess with them. When you need to fix something, or add a new feature to your project, create a new working branch. Make changes to that branch, then merge them into the master branch when done. You can then deploy your master branch (push it up to a web server, for example)
 # 3. Make sure master is up-to-date. Add and commit files, if there are any.
@@ -151,7 +321,7 @@
 # 20. Then just follow steps 1-7 again.
 
 
-# To clone a repo from another repo
+# TO CLONE A REPO FROM ANOTHER REPO
 # 1a. git clone <url_a or file_path_a> :This clones the repo located at <url_a or file_path_a> into the working directory, saving it as the same name as that at <url_a or file_path_a>.
 
 # 1b. git remote add <url_a or file_path_a> : This enables the working directory to communicate with the added remote repo.
@@ -174,19 +344,24 @@
 
 # git pull <name_of_remote_repo or 'origin'> <name_of_local_repo or 'master> :This pulls commits from a remote repo 
 
+# When you attempt to push commits up a remote repo and get something like:
+# error: failed to push some refs to <remote repo or url>
+
+# 1. Then there is probably some work in the remote repo that you do not have locally. This is usually caused by another repository pushing to the same ref. You would need to first integrate the remote changes (e.g., 'git pull ...') before pushing again. See the 'Note about fast-forwards' in 'git push --help' for more details on this of needed. But this can usually be fixed by doing :
+
+# $ git pull origin master --allow-unrelated-histories
+
+# in most instances. Otherwise do:
+  
+# $ git pull <REMOTE_NAME> <BRANCH_NAME> --allow-unrelated-histories
+
+# You would most likely get message like :
+# CONFLICT (add/add): Merge conflict in <FILE_NAME>
+# Automatic merge failed; fix conflicts and then commit the result.
+# 2. You can then just go into <FILE_NAME> to decide/edit the version of the file that you want, save it, and then proceed with git add, git commit, and git push. Bingo!
+
 # To ask git to permanently ignore changes in a file
 # 1. git update-index --assume-unchanged FILE [FILE ...]
-
-
-
-# ABSOLUTE REFERENCE INFO FOUND AT : https://git-scm.com/docs
-
-# Github
-# 1. Watch --> This would set github to notify the watcher when any noticeable changes occur within the watched repo or project.
-
-# 2. Star --> This adds the starred repo to the starer's facvorites repos on github to make it easier for that repo to be found in the future.
-
-# 3. Fork --> This creates a clone of the forked repo into the forker's github account. 
 
 
 # GIT EXTENSIONS
@@ -308,329 +483,6 @@
 # $ git flow hotfix finish <VERSION>
 
 
-
 # Note that not all available commands are covered here, only the most important ones. You can still use git and all its commands normally as you know them, git flow is only a tooling collection. The 'support' feature is still beta, using it is not advised. If you'd like to supply translations I'd be happy to integrate them.
 
 
-
-
-
-
-
-UNDER CONSTRUCTION.
-
-# GIT
-# 1. To rename a git repo:
-# Go to the repo in gitHub, rename it to the new name under settings.
-# Rename the repo locally, and then set the new url in get with:
-# git remote set-url origin new_url
-# An example of url is https://github.com/suhai/repo-name
-# you can then make a commit and push the commit 
-
-# 2. To create a new repository on the command line: 
-# echo "# name_of_repo" >> README.md // if you need a readME file
-# git init
-# git add README.md // or whatever file you want to add
-# git commit -m "first commit"
-# git remote add origin https://github.com/suhai/name_of_repo.git
-# git push -u origin master
-
-# 3. To push an existing repository from the command line:
-# git remote add origin https://github.com/suhai/name_of_repo.git
-# git push -u origin master
-# And then you can do whatever commits you wanna do from here
-
-# 4. To delete a git repository, cd into the local repo and delete the .git file with 'rm -rf .git'
-# Then go to github and delete the repo in settings.
-
-
-# COMMAND LINE
-# 1. $ echo "Hello" > hello.txt === ‘ > ’overwrites all original contents in hello.txt, appending the stdout of“ Hello” to it instead
-# 2. $ cat hello.txt‘ cat’ outputs the content of hello.txt
-# 3. $ cat oceans.txt > continents.txt
-# 4. $ cat glaciers.txt >> rivers.txt === ‘ >> ’appends the stdout of glaciers.txt to the file rivers.txt
-# 5. $ cat rivers.txt
-# 6. $ cat < lakes.txt === take the stdin of lakes.txt and outputs it in the terminal
-# 7. $ cat volcanoes.txt | wc === ‘ | ’takes the stdout of cat volcanoes.txt and use it as the stdin
-# for wc
-# 8. $ cat volcanoes.txt | wc | cat > islands.txt == 7 above is then piped to cat, whose stdout is redirected to islands.txt
-# 9. $ sort lakes.txt === sorts lakes.txt in alpha order and outputs the result in the terminal
-# 10. $ cat lakes.txt | sort > sorted - lakes.txt ===
-#     11. $ uniq deserts.txt ===
-#     12. $ sort deserts.txt | uniq ===
-#     13. $ sort deserts.txt | uniq > uniq - deserts.txt == > make it a habit to always call‘ sort’, ‘pipe’ before‘ uniq’
-# 14. $ grep Mount mountains.txt === searches
-# for files that match the pattern and
-# return the result
-# 15. $ grep - I Mount mountains.txt === does 14 with the
-# case -insensitive flag, ‘-i’
-# 16. $ grep - R Arctic === recursively searches
-# for files that match‘ Arctic’ and outputs them with the lines containing them
-# 17. $ grep - Rl Arctic === does 16, except it doesn’ t output the lines containing the matched results.
-# 18. $ sed 's/snow/rain/'
-# forests.txt === searches
-# for‘ snow’ in forests.txt and replace it with‘ rain’
-# 19. $ sed 's/snow/rain/g’ forests.txt === does 18 globally
-# 20. $ alias === displays a list all aliases available
-
-# $ ls                                                                                                                     
-# 2014  2015  hardware.txt
-
-# In the terminal, first you see $. This is called a shell prompt. It appears when
-# the terminal is ready to accept a command. When you type ls, the command line 
-# looks at the folder you are in, and then "lists" the files and folders inside it.
-# The directories 2014, 2015, and the file hardware.txt are the contents of the 
-# current directory. "ls" is an example of a command, a directive to the computer 
-# to perform a specific task.
-
-# BACKGROUND
-
-# The command line is a text interface for your computer. It's a program that 
-# takes in commands, which it passes on to the computer's operating system to run.
-
-# From the command line, you can navigate through files and folders on your 
-# computer, just as you would with Windows Explorer on Windows or Finder on Mac OS.
-# The difference is that the command line is fully text-based.
-
-# Here's an appendix of commonly used commands.
-
-# COMMANDS
-# wd : outputs the name of the current working directory.
-# ls : lists all files and directories in the working directory.
-# cd : switches you into the directory you specify.
-# cd .. : goes up one branche
-# cd ../.. : goes up two branches
-# mkdir : creates a new directory in the working directory.
-# touch : creates a new file inside the working directory.
-# Options modify the behavior of commands:
-# ls -a lists all contents of a directory, including hidden files and directories
-# ls -l lists all contents in long format
-# ls -t orders files and directories by the time they were last modified
-# Multiple options can be used together, like ls -alt
-# From the command line, you can also copy, move, and remove files and directories:
-# cp copies files
-# mv moves and renames files
-# rm removes files
-# rm -r removes directories
-# Wildcards are useful for selecting groups of files and directories
-
-# Redirection reroutes standard input, standard output, and standard error.
-# The common redirection commands are:
-
-# > redirects standard output of a command to a file, overwriting previous content.
-# >> redirects standard output of a command to a file, appending new content to 
-# old content.
-# < redirects standard input to a command.
-# | redirects standard output of a command to another command.
-# A number of other commands are powerful when combined with redirection commands:
-
-# sort: sorts lines of text alphabetically.
-# uniq: filters duplicate, adjacent lines of text.
-# grep: searches for a text pattern and outputs it.
-# sed : searches for a text pattern, modifies it, and outputs it.
-
-
-# COMMANDS IN DETAIL
-
-# #>
-# $ cat oceans.txt puts the content of the file "oceans.txt" onto the terminal
-# $ cat oceans.txt > continents.txt
-# > takes the standard output of the command on the left, and redirects it to the 
-# file on the right.
-
-# >>
-# $ cat glaciers.txt >> rivers.txt
-# >> takes the standard output of the command on the left and appends (adds) it 
-# to the file on the right.
-
-# <
-# $ cat < lakes.txt
-# < takes the standard input from the file on the right and inputs it into
-# the program on the left.
-
-# |
-# $ cat volcanoes.txt | wc
-# | is a "pipe". The | takes the standard output of the command on the left,
-# and pipes it as standard input to the command on the right. You can think of 
-# this as "command to command" redirection.
-
-# ~/.BASH_PROFILE
-# $ nano ~/.bash_profile
-# ~/.bash_profile is the name of file used to store environment settings. 
-# It is commonly called the "bash profile". When a session starts, it will load 
-# the contents of the bash profile before executing commands.
-
-# ALIAS
-# alias pd="pwd"
-# The alias command allows you to create keyboard shortcuts, or aliases, 
-# for commonly used commands.
-
-# CD
-# cd Desktop/
-# cd takes a directory name as an argument, and switches into that directory.
-
-# $ cd jan/memory
-# To navigate directly to a directory, use cd with the directorys path as an 
-# argument. Here, cd jan/memory/ command navigates directly to the jan/memory 
-# directory.
-
-# CD ..
-# $ cd ..
-# To move up one directory, use cd ... Here, cd .. navigates up from jan/memory/ to jan/.
-
-# CP
-# $ cp frida.txt historical/
-# cp copies files or directories. Here, we copy the file frida.txt and place it 
-# in the historical/ directory
-
-# Wildcards
-# $ cp * satire/
-# The wildcard * selects in the working directory, so here we use cp to copy all 
-# files into the satire/ directory.
-
-# $ cp m*.txt scifi/
-# Here, m*.txt selects all files in the working directory starting with "m" and 
-# ending with ".txt", and copies them to scifi/.
-
-# ENV
-# env
-# The env command stands for "environment", and returns a list of the environment 
-# variables for the current user.
-
-# ENV | GREP VARIABLE
-# env | grep PATH
-# env | grep PATH is a command that displays the value of a single environment variable.
-
-# EXPORT
-# export USER="Jane Doe"
-# export makes the variable to be available to all child sessions initiated from
-# the session you are in. This is a way to make the variable persist across programs.
-
-# GREP
-# $ grep Mount mountains.txt
-# grep stands for "global regular expression print". It searches files for lines 
-# that match a pattern and returns the results. It is case sensitive.
-
-# GREP -I
-# $ grep -i Mount mountains.txt
-# grep -i enables the command to be case insensitive.
-
-# GREP -R
-# $ grep -R Arctic /home/ccuser/workspace/geography
-# grep -R searches all files in a directory and outputs filenames and lines
-# containing matched results. -R stands for "recursive".
-
-# GREP -RL
-# $ grep -Rl Arctic /home/ccuser/workspace/geography
-# grep -Rl searches all files in a directory and outputs only filenames with
-# matched results. -R stands for "recursive" and l stands for "files with matches".
-
-# HOME
-# $ echo $HOME
-# The HOME variable is an environment variable that displays the path of the home 
-# directory.
-
-# LS
-#   $ ls
-#   2014  2015  hardware.txt
-# ls lists all files and directories in the working directory
-#   ls -a
-#   .  ..  .preferences  action  drama comedy  genres.xt
-# ls -a lists all contents in the working directory, including hidden files and 
-# directories
-
-# ls -l
-
-#   ls -l
-#   drwxr-xr-x 5  cc  eng  4096 Jun 24 16:51  action
-#   drwxr-xr-x 4  cc  eng  4096 Jun 24 16:51  comedy
-#   drwxr-xr-x 6  cc  eng  4096 Jun 24 16:51  drama
-#   -rw-r--r-- 1  cc  eng     0 Jun 24 16:51  genres.txt
-# ls -l lists all contents of a directory in long format. Here is what each column
-# means.
-# ls -t orders files and directories by the time they were last modified.
-# ls -alt and does all the l -a, l -l, and l -t functions.
-
-# MKDIR
-# $ mkdir media
-# mkdir takes in a directory name as an argument, and then creates a new directory
-# in the current working directory. Here we used mkdir to create a new directory 
-# named media/.
-
-# MV
-# $ mv superman.txt superhero/
-# To move a file into a directory, use mv with the source file as the first 
-# argument and the destination directory as the second argument. Here we move 
-# superman.txt into superhero/.
-
-# NANO
-# $ nano hello.txt
-# nano is a command line text editor. It works just like a desktop text editor 
-# like TextEdit or Notepad, except that it is accessible from the the command line
-# and only accepts keyboard input.
-
-# PATH
-# $ echo $PATH
-
-# /home/ccuser/.gem/ruby/2.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin
-# PATH is an environment variable that stores a list of directories separated by 
-# a colon. Each directory contains scripts for the command line to execute. 
-# PATH lists which directories contain scripts.
-
-# PWD
-# $ pwd
-# /home/ccuser/workspace/blog
-# pwd prints the name of the working directory
-
-# RM
-# $ rm waterboy.txt
-# rm deletes files. Here we remove the file waterboy.txt from the file system.
-
-# RM -R
-# $ rm -r comedy
-# rm -r deletes a directory and all of its child directories.
-
-# SED
-# $ sed 's/snow/rain/' forests.txt
-# sed stands for "stream editor". It accepts standard input and modifies it based 
-# on an expression, before displaying it as output data.
-# In the expression 's/snow/rain/':
-# s: stands for "substitution".
-# snow: the search string, the text to find.
-# rain: the replacement string, the text to add in place.
-# $ sed 's/snow/rain/g' forests.txt does a global "find and replace"
-
-# SORT
-# $ sort lakes.txt
-# sort takes the standard input and orders it alphabetically for the standard output.
-
-# STANDARD ERROR
-# standard error, abbreviated as stderr, is an error message outputted by a 
-# failed process.
-
-# SOURCE
-# source ~/.bash_profile
-# source activates the changes in ~/.bash_profile for the current session. 
-# Instead of closing the terminal and needing to start a new session, source 
-# makes the changes available right away in the session we are in.
-
-# STANDARD INPUT
-# standard input, abbreviated as stdin, is information inputted into the terminal 
-# through the keyboard or input device.
-
-# STANDARD OUTPUT
-# standard output, abbreviated as stdout, is the information outputted after a 
-# process is run.
-
-# TOUCH
-# $ touch data.tx
-# touch creates a new file inside the working directory. It takes in a file name 
-# as an argument, and then creates a new empty file in the current working directory.
-# Here we used touch to create a new file named keyboard.txt inside the 2014/dec/ directory.
-
-# If the file exists, touch is used to update the modification time of the file
-
-# UNIQ
-
-# $ sort lakes.txt
-# sort takes the standard input and orders it alphabetically for the standard output.
