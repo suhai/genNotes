@@ -317,7 +317,7 @@
 
 
 
-UNDER CONSTRUCTION
+UNDER CONSTRUCTION.
 
 # GIT
 # 1. To rename a git repo:
