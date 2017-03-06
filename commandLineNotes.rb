@@ -370,4 +370,16 @@
 # Step 6.2.3 : make install <-- installs the software
 # Step 7, read the readme file
 
+# To look up the list of servers for a domain name such as 'teamtreehouse.com':
+# $ host -t ns teamtreehouse.com
+# This would output something like
+# teamtreehouse.com name server ns-1004.awsdns-61.net.
+# teamtreehouse.com name server ns-1233.awsdns-26.org.
+# teamtreehouse.com name server ns-1567.awsdns-03.co.uk.
+# teamtreehouse.com name server ns-334.awsdns-41.com.
+
+# To look up info about a particular domain name such as 'tkldmonkey.com':
+# $ whois tkldmonkey.com
+# This would output a bunch of info about the domain name.
+
 
