@@ -1,8 +1,9 @@
-GIT BASICS
+# GIT BASICS
 # source1 == https://git-scm.com/docs
-# source2 == https://github.com/treehouse-dave/get-acquainted-with-git
-# source3 == http://danielkummer.github.io/git-flow-cheatsheet/
-##############################################################################
+# source2 == https://www.git-tower.com/learn/
+# source3 == https://github.com/treehouse-dave/get-acquainted-with-git
+# source4 == http://danielkummer.github.io/git-flow-cheatsheet/
+#------------------------------------------------------------------------------#
 
 # USEFUL CONFIGURATION OPTIONS 
 # git config --global alias.st status Lets you just type git st whenever you want to see the status of the repo
@@ -484,5 +485,27 @@ GIT BASICS
 
 
 # Note that not all available commands are covered here, only the most important ones. You can still use git and all its commands normally as you know them, git flow is only a tooling collection. The 'support' feature is still beta, using it is not advised. If you'd like to supply translations I'd be happy to integrate them.
+
+
+# Helpful info
+# 1. Commit early and often. Small comits make it easier for other developers to understand the changes and also be able to roll back the changes if something went wrong.
+
+# 2. Try to commit often. This helps you commit only related changes and allow you to share your code more frequently with others. This makes it easier for everyone to integrate changes regularly and avoid merge conflicts.
+
+# 3. Do not commit half-done works. Try to split a feature's implementation into small logical chunks and remember to commit early and often. 
+
+# 4. Always test tour code thoroughly before you commit. 
+
+# 5. Write good commit messages. Use the imperative present tense. Ex. <change> instead of <changed> or <changes> to be consistent with generated messages from commands like git merge.. Begin your commit with a short descriptive message summary of your change. (up to 50 characters as a guideline). Separate that from the following body with a blank line. The body of your message should answer the following: 
+# i. what was the motivation for this change
+# ii. how does it differ from the previous implementation.
+
+# 6. Do not use VCS a backup system to store non-code files. Also pay attention to commiting semantically; don't just cram in files.
+
+# 7. Don't shy away from using branches where necessary. Branches help avoid mixing up different lines of development.
+
+# 8. Make sure you are using a work-flow that is in line with your team's preferences, your project, and your overall development.
+
+# 9. Get help from $ git help <command> if necessary.
 
 
