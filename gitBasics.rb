@@ -11,11 +11,20 @@
 # git config --global alias.ci commit Lets you just type git ci whenever you want run a commit
 # *This just covers some basic Git commands. Doesn't cover remote repos, push or pull
 
+
 # SET UP
 # git --version 
 # git config --global color.ui true
 # git config --global user.name <my_name>
 # git config --global user.email <my_email>
+
+
+# ON GITHUB:
+# 1. Watch --> This would set github to notify the watcher when any noticeable changes occur within the watched repo or project.
+
+# 2. Star --> This adds the starred repo to the starer's facvorites repos on github to make it easier for that repo to be found in the future.
+
+# 3. Fork --> This creates a clone of the forked repo into the forker's github account.
 
 # CREATE
 # Clone an existing repo:
@@ -23,6 +32,31 @@
 
 # Create a new local repo:
 # $ git init 
+
+
+# LOCAL REPOS AND GITHUB
+# 1. To create a new repository on the command line: 
+# echo "# name_of_repo" >> README.md // if you need a readME file
+# git init
+# git add README.md // or whatever file you want to add
+# git commit -m "first commit"
+# git remote add origin https://github.com/suhai/name_of_repo.git
+# git push -u origin master
+
+# 2. To push an existing repository from the command line:
+# git remote add origin https://github.com/suhai/name_of_repo.git
+# git push -u origin master
+# And then you can do whatever commits you wanna do from here
+
+# 3. To delete a git repository, cd into the local repo and delete the .git file with 'rm -rf .git'
+# Then go to github and delete the repo in settings.
+
+# 4. To rename an existing git repo (with both a local and remote address):
+# Go to the repo in gitHub, rename it to the new name under settings.
+# Rename the repo locally, and then set the new url in get with:
+# git remote set-url origin new_url
+# An example of url is https://github.com/suhai/repo-name
+# you can then make a commit and push the commit 
 
 
 # LOCAL CHANGES
@@ -146,46 +180,7 @@
 
 # .. and preserve uncommitted local changes:
 # $ git reset --keep <commit>
-
-
-
-
-
-
-
-
-
-
-# LOCAL REPOS AND GITHUB
-# 1. To create a new repository on the command line: 
-# echo "# name_of_repo" >> README.md // if you need a readME file
-# git init
-# git add README.md // or whatever file you want to add
-# git commit -m "first commit"
-# git remote add origin https://github.com/suhai/name_of_repo.git
-# git push -u origin master
-
-# 2. To push an existing repository from the command line:
-# git remote add origin https://github.com/suhai/name_of_repo.git
-# git push -u origin master
-# And then you can do whatever commits you wanna do from here
-
-# 3. To delete a git repository, cd into the local repo and delete the .git file with 'rm -rf .git'
-# Then go to github and delete the repo in settings.
-
-# 4. To rename an existing git repo (with both a local and remote address):
-# Go to the repo in gitHub, rename it to the new name under settings.
-# Rename the repo locally, and then set the new url in get with:
-# git remote set-url origin new_url
-# An example of url is https://github.com/suhai/repo-name
-# you can then make a commit and push the commit 
-
-# ON GITHUB:
-# 1. Watch --> This would set github to notify the watcher when any noticeable changes occur within the watched repo or project.
-
-# 2. Star --> This adds the starred repo to the starer's facvorites repos on github to make it easier for that repo to be found in the future.
-
-# 3. Fork --> This creates a clone of the forked repo into the forker's github account. 
+ 
 
 # BASIC COMMANDS
 # 1. git init :Creates a new Git repository in the current directory. This is normally used for a directory that has already been created. In addition, a directory named .git is added to the folder. This folder holds all the Git history and information for the repo. To get rid of the repo, just delete the .git folder
@@ -209,7 +204,15 @@
 
 # 9. git add <path/to/file> :Adds specified file to staging
 
-# 10. git commit -m "Add file to repo" :Commit staged files to the repo with message
+# 10. git commit -m "Add file to repo" :Commit staged files to the repo with the message "Add file to repo". To make a multi-line comment, use SHIFT + RETURN after each line of message to move to a new line without triggering a premature commit. For ex. 
+# $ git commit -m "added a comment to the css file.
+# SHIFT + RETURN
+# 1. this is an experiment.
+# SHIFT + RETURN
+# 2. This is also a test.
+# SHIFT + RETURN
+# 3. and many more to follow" 
+# And then you can now strike the Return key to commit.
 
 # 11. git commit --amend -m "New Message" :Changes the commit message for the last commit
 
@@ -363,6 +366,9 @@
 
 # To ask git to permanently ignore changes in a file
 # 1. git update-index --assume-unchanged FILE [FILE ...]
+
+# To remove an old remote
+# $ git remote remove <myOrigin>
 
 
 # GIT EXTENSIONS
