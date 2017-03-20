@@ -363,6 +363,25 @@
 # CONFLICT (add/add): Merge conflict in <FILE_NAME>
 # Automatic merge failed; fix conflicts and then commit the result.
 # 2. You can then just go into <FILE_NAME> to decide/edit the version of the file that you want, save it, and then proceed with git add, git commit, and git push. Bingo!
+# Ocassionally you will get a response like this:
+  # Please enter a commit message to explain why this merge is necessary,
+  # especially if it merges an updated upstream into a topic branch.
+  #
+  # Lines starting with '#' will be ignored, and an empty message aborts
+  # the commit.
+# To resolve such an issue do this: 
+  # Press 'i' to enter insert mode.
+  # Now you can type your message, as if you were in a normal (non-modal) text editor. This would be your commit message.
+  # Press esc to go back to command mode.
+  # Then type :wq followed by enter to save and quit. You'll now be back into the normal terminal mode.
+
+# To simultaneously push to multiple remote repos, do:
+#   git remote set-url --add --push origin git://original/repo.git
+#   git remote set-url --add --push origin git://another/repo.git
+#   git push --set-upstream origin master
+# Then when you're ready to push to the remotes you just do :
+#   git push origin. This would push to all the added remote repos
+# #
 
 # To ask git to permanently ignore changes in a file
 # 1. git update-index --assume-unchanged FILE [FILE ...]
