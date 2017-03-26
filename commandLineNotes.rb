@@ -6,7 +6,7 @@
 # Don't include the '=' in your commands
 # '..' means that more than one file can be affected with only one command ex: rm file.txt file2.txt movie.mov .. ..
 
-#                                     BASIC COMMANDS
+# BASIC COMMANDS
 
 # BASIC TERMINAL SHORTCUTS
 # CTRL L = Clear the terminal
