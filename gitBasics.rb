@@ -534,3 +534,19 @@
 # 9. Get help from $ git help <command> if necessary.
 
 
+# In addition to the above, I am also using the DiffMerge tool downloaded from https://sourcegear.com/diffmerge/downloads.php
+# This helps to resolve merge conflicts.
+# The installation instructions are avilable there and basically involve setting up Diffmerge on the commandline with these commands in order to get it ready: 
+# Settings for OS X
+# First confirm that /usr/local/bin/diffmerge is present. If you used the PKG Installer, this was installed when /Applications/DiffMerge.app was installed. If you used the DMG file, refer to the instructions for installing the Extras.
+# The following commands will update your .gitconfig to let GIT use DiffMerge:
+
+# 1. $ git config --global diff.tool diffmerge
+# 2. $ git config --global difftool.diffmerge.cmd "/usr/local/bin/diffmerge \"\$LOCAL\" \"\$REMOTE\""
+
+# 3. $ git config --global merge.tool diffmerge
+# 4. $ git config --global mergetool.diffmerge.trustExitCode true
+# 5. $ git config --global mergetool.diffmerge.cmd "/usr/local/bin/diffmerge --merge --result=\"\$MERGED\" \"\$LOCAL\" \"\$BASE\" \"\$REMOTE\""
+
+# From here on, $ git difftool can be used instead of $ git diff.
+# When the $ git difftool command is run, it prompts for a [Y/n]?. when answered with a 'y', it launches a file with that compares the file that has been changed. all cchanges can then be made and then committed on the comandline / git.
