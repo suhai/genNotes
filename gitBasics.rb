@@ -60,10 +60,11 @@
 
 # LOCAL CHANGES
 # Changed files in your working directory:
-# $git status 
+# $ git status 
 
 # Changes to tracked files:
-# $git diff
+# $ git diff
+# ######
 
 # Add all current changes to the next commit:
 # $ git add .
