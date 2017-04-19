@@ -78,3 +78,19 @@
   # 300 responses means Redirection
   # 400 responses means a cleint Error
   # 500 responses means a server Error
+
+
+# 1. Computer data storage is measured in bytes. Ex 12Gb
+# 2. Whereas processing speed is measured in bits per second. Ex, 124Mbps
+# 3. A super computer has lots of CPU’s that work on the same problem at the same time using techniques called parallel processing
+# 4. A computer server holds and accesses lots of data or programs and renders them upon valid requests.
+# 5. There are three types of Data Networks:
+#   - LAN (Local Area Network) is a small group of computers connected together 
+#   - WAN (Wide Area Network) is one or more LANs that connected over long distances with a rental cable from an internet company
+#   - VPN (Virtual Private Network) is one or more LANs that connected over long distances over the internet
+# 6. Source Code is the actual text document that the programmer creates: they type it up, it's letters, numbers, and symbols. The computer has to have a way of interpreting that and making something really powerful run from it. There are two main ways this is done: 
+#   - Interpreter 
+#   - Compiler
+# Every browser has an interpreter, and that's how JavaScript is processed. Other languages, like C++, 		are used with a compiler. Unlike an interpreter, the compiler does all of its work on the programmer's 		end. They send out their package, their product, and it's already been compiled, it can already run on a machine. Javascript, however, and other interpreter languages, you just write the JavaScript and the 		browser on the user's end has the capability to interpret it so you don't need a compiler.
+# 7. 
+# 8. 
