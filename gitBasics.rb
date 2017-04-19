@@ -64,7 +64,6 @@
 
 # Changes to tracked files:
 # $ git diff
-# ######
 
 # Add all current changes to the next commit:
 # $ git add .
