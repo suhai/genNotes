@@ -52,7 +52,7 @@ Course.prototype.conflictsWith = function (other) {
   return this.days.some(day => other.days.indexOf(day) !== -1 );
 };
 
-//Comment in the code below to run
+// To run this file the comments below should be uncommenetd.
 
 // let student1 = new Student("Nigel", "Leffler");
 // let course1 = new Course("101", "CS", 3, ["mon", "wed", "fri"], 1);
