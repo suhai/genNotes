@@ -1,2 +1,2 @@
 # genNotes
-This repo contains files of my general notes and observations. I will in most cases save them as .rb files unless the file is already language specific. 
+This is a repo where I keep my own notes on what I learn. It usually serves as a source of reference for me when working on applications or language specific projects. I update the files and folders as I find relevant.
