@@ -22,7 +22,7 @@
 # 3. Ruby on Rails
 # 4. JavaScript / jQuery
 # 5. Node.js
-# 6. React.j / Redux
+# 6. React.js / Redux
 # 7. SQL
 # 8. Git
 # 9. AWS

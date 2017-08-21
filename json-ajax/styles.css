@@ -1,0 +1,194 @@
+/* GENERAL CSS */
+* {
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  /* background: PeachPuff; */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background: seashell; */
+  font-family: Courier New, Courier, monospace;
+  padding: 50px 10%;
+}
+
+
+
+/* 1. MAIN CONTENT */
+button {
+  background-color: #806A04;
+  color: #FFF;
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 2px 2px 0 #125062;
+  margin: 20px 10px;
+  transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
+  position: relative;
+}
+
+button:hover {
+  background-color: cadetblue;
+}
+
+button:active {
+  background-color: #540333;
+  box-shadow: none;
+  position: relative;
+  top: -8px;
+  left: 2px;
+}
+
+#reset-btn {
+  background-color: salmon;
+}
+
+p {
+  padding: 4px 0 2px 8px;
+  line-height: 1.7;
+  border-bottom: 1px dotted gray;
+  list-style: none;
+  margin: 0;
+}
+
+
+
+/* 2.  CLASSES  */
+.hide-me {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.75);
+}
+
+.ajax1 {
+  border: 2px solid maroon;
+  border-radius: 5px;
+  display: flex;
+}
+
+
+
+
+
+/* 3.  IDs */
+
+
+/* 4.  */
+
+
+/* 5.  */
+
+
+/* 6.  */
+
+
+/* 7.  */
+
+
+/* 8.  */
+
+
+/* 9.  */
+
+
+/* 10.  */
+
+
+/* 11.  */
+
+
+/* 12.  */
+
+
+/* 13.  */
+
+
+/* 14.  */
+
+
+/* 15.  */
+
+
+/* 16.  */
+
+
+/* 17.  */
+
+
+/* 18.  */
+
+
+/* 19.  */
+
+
+/* 20.  */
+
+
+/* 21.  */
+
+
+/* 22.  */
+
+
+/* 23.  */
+
+
+/* 24.  */
+
+
+/* 25.  */
+
+
+/* 26.  */
+
+
+/* 27.  */
+
+
+/* 28.  */
+
+
+/* 29.  */
+
+
+/* 30.  */
+
+
+/* 31.  */
+
+
+/* 32.  */
+
+
+/* 33.  */
+
+
+/* 34.  */
+
+
+/* 35.  */
+
+
+/* 36.  */
+
+
+/* 37.  */
+
+
+/* 38.  */
+
+
+/* 39.  */
+
+
+/* 40.  */

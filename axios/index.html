@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Axios Notes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+
+    <!-- 01. -->
+    <h2 style="text-align: center; color: black">AXIOS</h2>
+ 
+    <div class="">
+      <div class="">
+
+        <div class="">
+          <div class="header">Fetch All Todos</div>
+          <div class="todos">
+            <button class="" onclick="getTodos()">Fetch Todos</button>
+            <button class="reset-btn" onclick="clearMyTodos()">Clear</button>
+            <button class="clear-btn" onclick="clearAll()">Clear All</button>
+            <div class="" id="fetchTodos"></div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="header">GET A Specific Todo Given Its ID</div>
+          <div class="todos">
+            <input type="text" class="" id="todoId" placeholder="Todo ID ..."/>
+            <br/>
+            <button class="" onclick="getTodo()">Fetch Todo</button>
+            <button class="reset-btn" onclick="clearMyTodo()">Clear</button>
+            <button class="clear-btn" onclick="clearAll()">Clear All</button>
+            <div class="" id="fetchTodo"></div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="header">POST A Todo Given Its Title</div>
+          <div class="todos">
+            <form class="" id="todoInputForm">
+              <div class="">
+                <input type="text" class="" id="todoTitle" placeholder="Todo Title ..."/>
+              </div>
+              <button type="submit" class="">Post Todo</button>
+            </form>
+            <button class="reset-btn" onclick="clearMyPostedTodo()">Clear</button>
+            <button class="clear-btn" onclick="clearAll()">Clear All</button>
+            <br/>
+            
+            <div class="" id="postTodo"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+   
+    <h4></h4>
+    <div class=""> 
+      
+    </div> 
+    <br/>
+    <hr/>
+    <br/>
+
+    
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="axios.js"></script>
+</html>

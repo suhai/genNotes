@@ -1,0 +1,41 @@
+OAuth 2.0 is an Authorization framework
+It is used to authroize users of an application with an external server
+The current application delegates the user's Authorization to an external service (API) rather than managing them om its own. For example, a sporify user may be prompted to signup or login with facebook. spotify then  becomes the application and facebook becomes the API.
+The general process of authroization looks like below:
+1. A user wants to something in the current applciation using an API
+2. the current applciation makes a request to the AP's Authorization server
+3.The API displays an Authorization server to the user asking them to authorize the said application for a set of listed privileges.
+4. The user grants permission to the application to access the info 
+5. The Authorization grant + authentication code is sent to the application from the API
+6. The application uses the Authorization grnat + authentication code to request an access token from the API's Authorization server.
+7. The API server then provides the applciation withe an access token for the user.
+8. The applciation then sends a request for the allowed information to the API resouce server using the access token.
+9. The API resource server identifies the token as valid to access the pieces of information requested and then send sthe protected resouces requested to the application.
+10. Note that OAuth 2.0 serves as the Authentication framework. The actual Authentication of the user occurs with OpenIDConnect through the use of ID tokens that are passed along with the access token.
+
+
+
+
+                  Authentication Code Grant
+                            | 
+Implicit Grant  -----      User   ---------  Password Grant
+                            | 
+                  Client Credentials Grant
+
+OAuth 2.0 simplifies the user's experience through easy and simple integration with various APIs.
+
+For an applicationto establsh a relationship with a particular API, the application needs to register with the API's server.
+The applicationneeds to provide the API with the application's name, website and callback url to which the API's authentication screen can redirect a user after authenticating access to the user's account.
+The API then sends a set of credentials to the application. These include a Client ID (public ID) and a client Secrete (private ID) used to authentcate the application when i makes a requset for an access token.
+
+_________________                                      _________________ 
+|               |  --- Authorization Request -->       |      API      |
+|               |  <--- Authorization Grant ---        |AUTHENTICATION |
+|               |   --- Authorization Grant --->       |    SERVER     |
+|  APPLICATION  |  <--- Access Token + ID token ---    |               |
+|               |                                      |_______________|        
+|               |   --- Access Token + ID token --->   |     API       |
+|               |                                      |   RESOURCE    |
+|               |         <--- Resource ---            |    SERVER     |
+|_______________|                                      |_______________|
+

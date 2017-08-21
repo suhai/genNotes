@@ -1,0 +1,224 @@
+/* GENERAL CSS */
+* {
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  /* background: PeachPuff; */
+  background: PapayaWhip;
+}
+
+h4 {
+  text-align: center;
+  border: none;
+  padding: 5px;
+  background: transparent;
+}
+
+
+/* 1. TRAVERSING THE DOM */
+.container0 * { 
+  display: block;
+  border: 2px solid olivedrab;
+  color: black;
+  padding: 5px;
+  margin: 15px;
+  background: paleturquoise;
+}
+
+/* p.jq-p {
+  border: 5px solid hotpink;
+} */
+
+
+/* 2.  */
+
+
+/* 3.  */
+
+
+/* 4.  */
+.four {
+  max-width: 450px;
+  max-height: 300px;
+  margin: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+/* 5.  */
+.toggler {
+  display: flex;
+  flex-direction: column;
+  margin: auto 40%;
+}
+#fiveTog {
+  /* width: 100px;
+  height: 70px; */
+  border: 5px solid tomato;
+  background-color: seashell;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+/* 6.  */
+
+
+/* 7.  */
+.seven {
+  margin-bottom: 20px;
+}
+
+#seven1 {
+  font-size: 1em;
+}
+
+#seven2 {
+  font-size: 1em;
+}
+
+#block1 {
+  background-color: greenyellow;
+  width: 100px;
+  border: 5px solid black;
+}
+#block2 {
+  background-color: #0B7B9A;
+  width: 100px;
+  border: 5px solid hotpink;
+}
+
+
+
+/* 9.  */
+.nine-target {
+  border: 2px solid #bbb;
+  background-color: LightSkyBlue;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.nine-child {
+  display: block;
+  /* width: 90px; */
+  color: white;
+  font: bold 12px;
+  padding: 5px 10px;
+  background-color: orange;    
+}
+
+ .nine-sibling {
+  display: block;
+  /* width: 90px; */
+  font: bold 12px;
+  color: white;
+  padding: 5px 10px;
+  background-color: SlateGray;    
+}
+
+
+/* 10.  */
+.cadetblue {
+  color: cadetblue;
+}
+
+.large {
+  font-size: 24px;
+  color: darkgreen;
+}
+
+.ten, .tenb {
+  font-family: Tahoma, sans-serif;
+  font-size: 15px;
+  color: maroon;
+}
+
+
+
+/* 11.  */
+.container * { 
+  display: block;
+  border: 2px solid chocolate;
+  color: black;
+  padding: 5px;
+  margin: 15px;
+  background: aliceblue;
+}
+
+
+/* 12.  */
+
+
+/* 13.  */
+
+
+/* 14.  */
+
+
+/* 15.  */
+
+
+/* 16.  */
+
+
+/* 17.  */
+
+
+/* 18.  */
+
+
+/* 19.  */
+
+
+/* 20.  */
+
+
+/* 21.  */
+
+
+/* 22.  */
+
+
+/* 23.  */
+
+
+/* 24.  */
+
+
+/* 25.  */
+
+
+/* 26.  */
+
+
+/* 27.  */
+
+
+/* 28.  */
+
+
+/* 29.  */
+
+
+/* 30.  */
