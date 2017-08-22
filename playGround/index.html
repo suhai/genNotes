@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="Reviewing HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Suhai Yehuza">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <title>Play Ground</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEkSW6lUrJvIaKHkgt69XlHx8gei1rFVk&callback=myMap"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <!-- <script>
+      function getURL() {
+        var input = document.getElementById("url").value;
+          document.getElementById("test").innerHTML = input;
+          console.log(input);
+        }
+    </script> -->  
+  </head>
+
+  <body>
+
+    <h1 class='header'>PLAYGROUND</h1>
+    <p title="I'm a tooltip">This is a practice HTML, CSS, and JavaScript Work. Also look out for my tooltip.</P>
+    <br/>
+    <div class="container">
+      <form action="">
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="text" id="email">
+        </div>
+      </form>
+    </div>
+    <br/>
+    <hr/>
+
+    <div class="local-storage">
+      <h4>Local Storage</h4>
+      <div id="local-storage"></div>
+      <p><button onclick="localClickCounter()" type="button">Click Me To Count!</button></p>
+      <p>Click the button to see the counter increase.</p>
+      <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+    </div>
+    <br/>
+
+    <div class="session-storage">
+      <h4>Session Storage</h4>
+      <div id="session-storage"></div>
+      <p><button onclick="sessionClickCounter()" type="button">Click Me Too!</button></p>
+      <p>Click the button to see the counter increase.</p>
+      <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+    </div>
+    <br/>
+    <hr/>
+
+    
+    <div>
+      <p id="demo"></p>
+       <p>Get My Coordinates <button onclick="getLocation1()">YO!</button></p>
+      <div id="mapholder"></div>
+      <p>Display My Location on Map <button onclick="getLocation()">GO!</button></p>
+    </div>
+
+    <form action="some_file_path">
+      Select images: <input type="file" name="img" multiple>
+      <input type="submit">
+    </form>
+    <br/>
+    <hr/>
+
+    <note-taking>
+      <note-head>
+        <h2>Note Saving To Local Storage</h2>
+      </note-head>
+    
+      <section id="container2">
+        <div id="note" contenteditable="true" onkeyup="saveNote(this.id)"></div>
+      </section>
+    
+      <note-butt>
+        <div class="clear">
+          <a href="" onclick="clearNote()">Clear Note</a>
+        </div>
+      </note-butt>
+    </note-taking>
+    <br/>
+    <hr/>
+
+    
+    <div class="img-gallery">
+      <div class="gallery">
+        <a target="_blank" href="https://res.cloudinary.com/swy/image/upload/v1499749809/images/welder.svg">
+          <img src="https://res.cloudinary.com/swy/image/upload/v1499749809/images/welder.svg" alt="Welder" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://res.cloudinary.com/swy/image/upload/v1499749804/images/doctor.svg">
+          <img src="https://res.cloudinary.com/swy/image/upload/v1499749804/images/doctor.svg" alt="Doctor" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="https://res.cloudinary.com/swy/image/upload/v1499749804/images/diver.svg">
+          <img src="https://res.cloudinary.com/swy/image/upload/v1499749804/images/diver.svg" alt="Diver" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="http://res.cloudinary.com/swy/image/upload/v1499749809/images/stewardess.svg">
+          <img src="https://res.cloudinary.com/swy/image/upload/v1499749809/images/stewardess.svg" alt="Stewardess" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://res.cloudinary.com/swy/image/upload/v1499749805/images/friendship.svg">
+          <img src="https://res.cloudinary.com/swy/image/upload/v1499749805/images/friendship.svg" alt="Farmer" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+    </div> 
+    <br/>
+    <hr/>
+
+ 
+    
+    <div class="the-polaroid">
+      <div class="polaroid">
+        <img src="https://res.cloudinary.com/swy/image/upload/v1499750289/images/mavis-painting-1580.jpg" alt="Mavis" >
+        <div class="polaroid-text">
+          <p>Northern Lights in Norway</p>
+        </div>
+      </div>
+      
+      <div class="polaroid">
+        <img src="https://res.cloudinary.com/swy/image/upload/v1499750302/images/pexels-photo_3_copy.jpg" alt="Gymn" >
+        <div class="polaroid-text">
+          <p>Northern Lights in Norway</p>
+        </div>
+      </div>
+
+      <div class="polaroid">
+        <img src="https://res.cloudinary.com/swy/image/upload/v1499749890/images/city-people-walking-blur.jpg" alt="People" >
+        <div class="polaroid-text">
+          <p>Northern Lights in Norway</p>
+        </div>
+      </div>
+
+      <div class="polaroid">
+        <img src="https://res.cloudinary.com/swy/image/upload/v1499750289/images/mavis-painting-1580.jpg" alt="Mavis" >
+        <div class="polaroid-text">
+          <p>Northern Lights in Norway</p>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <hr/>
+    
+
+    <div class="text-justify">
+      <p contenteditable="true">text-align: justify; this value stretches the lines so that each line has equal width (ex newspapers / magazines).</p>
+
+      <p>in my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+      <p>but I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+      <p>on the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
+    </div>
+    <hr/>
+
+    <pre class="fline">
+      John is my son
+      So I sent him to school
+      To learn how to spell John bull
+    </pre>
+
+    <div class="font-aw">
+      <p>FONT AWESOME ICONS</p>
+      <i class="fa fa-bars fa-lg"></i>
+      <i class="fa fa-file fa-2x"></i>
+      <i class="fa fa-heart fa-3x"></i>
+      <i class="fa fa-car fa-4x"></i>
+      <i class="fa fa-cloud fa-5x"></i>
+      <br/>
+
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+        <li><i class="fa-li fa fa-spinner fa-spin"></i>List icons</li>
+        <li><i class="fa-li fa fa-square"></i>List icons</li>
+      </ul>
+      <br/>
+
+      <ul>
+        <i class="fa fa-spinner fa-spin"></i>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <i class="fa fa-refresh fa-spin"></i>
+        <i class="fa fa-cog fa-spin"></i>
+        <i class="fa fa-spinner fa-pulse"></i>
+      </ul>
+      <br/>
+
+      <ul>
+          <i class="fa fa-ambulance"></i>
+          <i class="fa fa-ambulance fa-rotate-90"></i>
+          <i class="fa fa-ambulance fa-rotate-180"></i>
+          <i class="fa fa-ambulance fa-rotate-270"></i>
+          <i class="fa fa-ambulance fa-flip-horizontal"></i>
+          <i class="fa fa-ambulance fa-flip-vertical"></i>
+      </ul>
+      <br/>
+    </div>
+    <br/>
+    <hr/>
+
+    <div>
+      <p>GOOGLE ICONS</p>
+      <p>Some Google icons:</p>
+      <i class="material-icons">cloud</i>
+      <i class="material-icons">favorite</i>
+      <i class="material-icons">attachment</i>
+      <i class="material-icons">computer</i>
+      <i class="material-icons">traffic</i>
+      <br><br>
+      
+      <p>Styled Google icons (size and color):</p>
+      <i class="material-icons" style="font-size:24px;">attachment</i>
+      <i class="material-icons" style="font-size:36px;">computer</i>
+      <i class="material-icons" style="font-size:48px;color:red;">favorite</i>
+      <i class="material-icons" style="font-size:60px;color:blue;">traffic</i>
+    </div>
+    <br/>
+    <hr/>
+    
+    <canvas id="myCanvas" width="200" height="100" style="border:5px dashed yellow;">
+      Your browser does not support the HTML5 canvas tag. 
+    </canvas>
+    <br/>
+    <button onclick="drawThis()">CLICK</button>
+    <br/>
+    <hr/>
+
+    <div>
+      
+    </div>
+    <br/>
+    <hr/>
+
+    <!-- This is a comment -->
+    <div class="border-test">
+      <p class="normal">My name is Suhai Yehuza.</p>
+      <p class="small">My name is Suhai Yehuza.</p>
+      <p><b>This is a bold text</b></p>
+      <p><strong>This is a strong text</strong></p>
+      <p><i>This is an italicized text</i></p>
+      <p><em>This is an emphasized text</em></p>
+      <h4>This demonstrates HTML <small>Small</small> Formatting</h4>
+      <h4>And this demonstrates HTML <mark>Marked</mark> Formatting</h4>
+      <p>This demonstrates <del>deleted</del> text.</p>
+      <p>My favorite <ins>color</ins> is red.</p>
+      <p>Log <sub>2</sub> 128 is equal to 7</p>
+      <p>5 <sup>3</sup> is equal to 125</p>
+    </div>
+    <br/>
+    <hr/>
+
+    <div>
+      <ul class="us-states">
+        <li>Washington</li>
+        <li>Oregon</li>
+        <li>California</li>
+        <li>New Mexico</li>
+        <li>Arizona</li>
+        <li>Nevada</li>
+        <li>Utah</li>
+        <li>Wyoming</li>
+        <li>Montana</li>
+        <li>Idaho</li>
+        <li>Colorado</li>
+        <li>Texas</li>
+        <li>Kansas</li>
+        <li>Oklahoma</li>
+        <li>Arizona</li>
+        <li>Louisiana</li>
+        <li>Arkansas</li>
+        <li>Missouri</li>
+        <li>Mississippi</li>
+        <li>Alabama</li>
+      </ul>
+    </div>
+    <hr/>
+
+    <div class="combinator1">
+      <p>Paragraph 1 in combinator1.</p>
+      <p>Paragraph 2 in combinator1.</p>
+      <span><p>Paragraph 3 in combinator1.</p></span>
+    </div>
+    <p>Paragraph 4. Not in a combinator1.</p>
+    <p>Paragraph 5. Not in a combinator1.</p>
+    <hr/>  
+
+    <div class="combinator2">
+      <p>Paragraph 1 in the combinator2.</p>
+      <p>Paragraph 2 in the combinator2.</p>
+      <span><p>Paragraph 3 in the combinator2.</p></span> <!-- not Child but Descendant -->  
+    </div>
+    <p>Paragraph 4. Not in a combinator2.</p>
+    <p>Paragraph 5. Not in a combinator2.</p>
+    <hr/> 
+
+    <div class="combinator3">
+      <p>Paragraph 1 in combinator3.</p>
+      <p class="two">Paragraph 2 in combinator3.</p>
+    </div>
+    <p>Paragraph 3. Not in a combinator3.</p>
+    <p>Paragraph 4. Not in a combinator3.</p>
+    <hr/> 
+
+    <div class="combinator4">
+      <code>Some code.</code>
+      <dodo>dodo 1.</dodo>   
+    </div>
+    <dodo>dodo 2.</dodo>
+    <code>Some code.</code>
+    <dodo>dodo 3.</dodo>
+    <hr/> 
+
+    
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40"
+      stroke="green" stroke-width="4" fill="yellow" />
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+    <svg width="400" height="180">
+      <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+      style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+    </svg>
+
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <hr/>
+
+    <p>Check out the map below.</p>
+    <div id="map" style="width:400px;height:400px;background:powderblue"></div>
+    <button onclick="myMap()">Show Map</button>
+    <hr/>
+    <br/> 
+
+    <div>
+      <iframe class="linker" width="800" height="500" src="../../../oasis/myCodeAcaProjects/adoptly.html" name="iframe_a"></iframe>
+      <p><a href="../../../oasis/myCodeAcaProjects/broadway.html" target="iframe_a">Broadway</a></p>
+      <p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+    </div>
+    <hr/>
+    <br/> 
+
+    <div class="flex-container">
+      <div id="C4">
+        The Declaration of Independence partly reads: 
+
+        <p>When in the Course of human events it becomes necessary for one people to dissolve the political bands which have connected them with another and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.</p>
+
+        <p>We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. — That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, — That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.</p> 
+        <p>Prudence, indeed, will dictate that Governments long 
+        established should not be changed for light and transient causes; and 
+        accordingly all experience hath shewn that mankind are more disposed to 
+        suffer, while evils are sufferable than to right themselves by abolishing the forms to which they are accustomed. But when a long train of abuses and usurpations, pursuing invariably the same Object evinces a design to reduce them under absolute Despotism, it is their right, it is their duty, to throw off such Government, and to provide new Guards for their future security. — Such has been the patient sufferance of these Colonies; and such is now the necessity which constrains them to alter their former Systems of Government. The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute Tyranny over these States. To prove this, let Facts be submitted to a candid world. He has refused his Assent to Laws, the most wholesome and necessary for the public good.</p>
+        </div>
+    </div>
+    <hr/>
+    <br/>
+
+    <div class="indent">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          
+      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+    </div>
+    <hr/>
+    <br/>
+
+    <div class="my-iframe">
+      <iframe 
+        src="https://www.youtube.com/embed/XGSy3_Czz8k">
+      </iframe>
+      <div class="iframer">The video above is 350px wide. The total width of this element is also 350px.</div>
+    </div>
+    <hr/>
+
+    <p>Here is a quote from Horace Mann:</p>
+    <blockquote cite="https://www.brainyquote.com/">
+      A house without books is like a room without windows. No man has a right to bring up his children without surrounding them with books, if he has the means to buy them. 
+    </blockquote>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    
+    <address>
+      Suhai Yehuza<br/> 
+      706 Polk Street<br/>
+      San Francisco, CA 94103<br/>
+    </address>
+    <br/>
+    <ol type="a">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <br/>
+    <hr/>
+    <br/> 
+
+    <ol type="1">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <br?>
+
+    <div class="cities">
+      <h2>London</h2>
+      <p>London is the capital of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      </div>
+
+      <div class="cities">
+      <h2>Paris</h2>
+      <p>Paris is the capital and most populous city of France.</p>
+      </div>
+
+      <div class="cities">
+      <h2>Tokyo</h2>
+      <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+      and the most populous metropolitan area in the world.</p>
+    </div>
+
+    
+    <ul style="list-style-type:square">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <br/>
+
+    <ul style="list-style-type:none">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <br/>
+    <hr/>
+    <br/> 
+
+    <h1>My <span style="color:red">Important</span> Heading</h1>
+
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+    <br/>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea
+        <ul>
+          <li>Black tea</li>
+          <li>Green tea</li>
+        </ul>
+      </li>
+      <li>Milk</li>
+    </ul>
+    <br/>
+    <hr/>
+    <br/> 
+
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <p><bdo dir="rtl">This text will be written from right to left</bdo></pr>
+    <br/>
+
+    <div>
+      <img src="https://res.cloudinary.com/swy/image/upload/v1502051143/pexels-photo-87293_i0oqm4.jpg" alt="Face" width="300" height="200">
+      <p><a href="https://www.tikldmonkey.com" target="_blank" title="tikLdMonkey">Click Me</a></p>
+      <br/>
+    </div>
+    <hr/>
+
+    <div class="textbox">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <hr/>
+    <br/>
+
+    <article>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </article>
+    <br/>
+    <hr/>
+
+    <div class="flex-container">
+      <div class="flex-item">Flex One</div>
+      <div class="flex-item">Flex Two</div>
+      <div class="flex-item">Flex Three</div>
+      <div class="flex-item">Flex Four</div>
+      <div class="flex-item">Flex Five</div>
+    </div>
+    <hr/>
+    <br/> 
+    <!-- <div>
+      <img2 class="img2" src="https://res.cloudinary.com/swy/image/upload/v1502051143/pexels-photo-87293_i0oqm4.jpg" alt="Face">
+      <h1>Because the image has a z-index of -1, it will be placed behind the text.</h1>
+      <br/>
+    </div>
+    <hr/> -->
+
+    <!-- <img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+      <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+    </map> -->
+    <table>
+      <caption>Monthly savings</caption>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    <br>
+
+    <form action=""
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range" id="a" name="a" value="50">
+      100 +
+      <input type="number" id="b" name="b" value="50">
+      =
+      <output name="x" for="a b"></output>
+      <br><br>
+      <input type="submit">
+    </form>
+    <br/>
+
+    <form>
+      Select your favorite color:
+      <input type="color" name="favcolor">
+    </form>
+    <br/>
+
+    <form>
+      Enter a date before 1980-01-01:
+      <input type="date" name="bday" max="1979-12-31"><br>
+      Enter a date after 2000-01-01:
+      <input type="date" name="bday" min="2000-01-02"><br>
+    </form>
+    <br/>
+
+    <form>
+      E-mail:
+      <input type="email" name="email">
+    </form>
+    <br/>
+
+    <form>
+      Quantity (between 1 and 5):
+      <input type="number" name="quantity" min="1" max="5">
+    </form>
+    <br/>
+
+    <form>
+      Quantity:
+      <input type="number" name="points" min="0" max="100" step="10" value="30">
+    </form>
+    <br/>
+
+    <form action="">
+      First name:<br>
+      <input type="text" name="firstname" value="John" readonly>
+    </form>
+    <br/>
+
+    <form action="">
+      First name:<br>
+      <input type="text" name="firstname" value="John" disabled>
+    </form>
+    <br/>
+
+    <form action="">
+      First name:<br>
+      <input type="text" name="firstname" maxlength="10">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname">
+    </form>
+    <br/>
+
+    <form action="" autocomplete="on">
+      First name:<input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      E-mail: <input type="email" name="email" autocomplete="off"><br>
+      <input type="submit">
+    </form>
+    <br/>
+
+    <form action="" novalidate>
+      E-mail: <input type="email" name="user_email">
+      <input type="submit">
+    </form>
+    <br/>
+    <hr/>
+    <br/> 
+
+    <p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+
+    <div class="pretty-table">
+      <table id="t01">
+        <tr id="theader">
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Adams</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Simon</td>
+          <td>Tim</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Buck</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Andrew</td>
+          <td>Doe</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>James</td>
+          <td>Anderson</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Paul</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Philip</td>
+          <td>Ham</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Thomas</td>
+          <td>Winter</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Mathew</td>
+          <td>Troy</td>
+          <td>10</td>
+        </tr>  
+      </table>
+    </div>
+    <br/>
+
+    <a href="#C4">Back to Declaration of Independence</a>
+
+    <div id='bottom-js'>
+      <p id="test"></p>
+      Enter a Word: <input type="text" id="some-word" value="">
+      <button onclick="getWord()">CLICK</button>
+    </div>
+    <hr/>
+
+    <code>
+      x = 5;<br/>
+      y = 6;<br/>
+      z = x + y;<br/>
+    </code>
+    <br/>
+
+    <code>
+      a = 15;
+      b = 10;
+      c = a + b;
+    </code>
+    <br/>
+    <br/>
+
+    Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.
+    <br/>  
+
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      Name:<br>
+      <input type="text" name="name"><br>
+      E-mail:<br>
+      <input type="text" name="mail"><br>
+      Comment:<br>
+      <input type="text" name="comment" size="50"><br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </form>
+
+    <p>display &euro;</p>
+    <p>display &dollar;</p>
+    <p>display &pound;</p>
+    <p>display &yen;</p>
+    <p>display &#8381;</p>
+
+    <textarea name="message" rows="10" cols="30">
+      The cat was playing in the garden.
+    </textarea>
+
+    <p>display &#20803;</p>
+    <p>display &forall;</p>
+    <p>display &part;</p>
+    <p>display &exist;</p>
+    <p>display &empty;</p>
+
+    <form>
+      <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other  
+    </form> 
+
+    <p>display &nabla;</p>
+    <p>display &isin;</p>
+    <p>display &notin;</p>
+    <p>display &ni;</p>
+    <p>display &prod;</p>
+
+    <form action="/action_page.php">
+      <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br><br>
+      <input type="submit">
+    </form>
+    <hr/>
+    <br/> 
+
+    <p>display &sum;</p>
+    <p>display &Alpha;</p>
+    <p>display &alpha;</p>
+    <p>display &Beta;</p>
+    <p>display &Gamma;</p>
+
+    <form>
+      First name:<br>
+      <input type="text" name="firstname"><br>
+      Last name:<br>
+      <input type="text" name="lastname">
+    </form>
+
+    <p>display &Delta;</p>
+    <p>display &Epsilon;</p>
+    <p>display &Zeta;</p>
+    <p>display &Omega;</p>
+    <p>display &omega;</p>
+
+    <form action="/action_page.php">
+      <input list="browsers" name="browser">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+      <input type="submit">
+    </form>
+
+  <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+    <p>display &copy;</p>
+    <p>display &reg;</p>
+    <p>display &trade;</p>
+    <p>display &larr;</p>
+    <p>display &uarr;</p>
+
+    <form action="/action_page.php">
+      First name:<br>
+      <input type="text" name="firstname" value="Mickey"><br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <p>display &rarr;</p>
+    <p>display &darr;</p>
+    <p>display &spades;</p>
+    <p>display &clubs;</p>
+    <p>display &hearts;</p>
+
+    <form action="/action_page.php">
+      Username: <input type="text" name="user">
+      <br><br>
+      Encryption: <keygen name="security">
+      <br><br>
+      <input type="submit">
+    </form>
+    <hr/>
+    <br/> 
+
+    <p>display &diams;</p>
+    <p>display &trade;</p>
+    <p>display &#8451;</p>
+    <p>display &sum;</p>
+    <p>display &infin;</p>
+
+    <form action="/action_page.php">
+      First name:<br>
+      <input type="text" value="Mickey"><br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <p>display &#9658;</p>
+    <p>display &#9728;</p>
+    <p>display &#2604;</p>
+    <p>display &#9986;</p>
+
+    <form action="/some-file-path">
+      <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <br/>
+
+    <p>Press <kbd>Ctrl + S</kbd> to see what happens</p>
+    <p>Pressing the wrong keys will throw an <samp>Error!</samp></p>
+    <hr/>
+
+    <div>
+      <p>Drag the abacus image into the rectangle:</p>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <br>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="drag1" src="imgs/abacus.svg" draggable="true" ondragstart="drag(event)" width="" height="">
+      </div>
+    </div>
+    <hr/>
+    <br>
+    
+    <div class="rounded-borders">
+      <div id="rcorners1"></div>
+      <div id="rcorners2"></div>
+      <div id="rcorners3"></div>
+      <div id="rcorners4"></div>
+    </div>
+    <br>
+    <hr/>
+
+    <div id="multi-bkgrnd">
+      <h2>Hey Whats Up Hello!</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    </div>
+    <br>
+    <hr/>
+
+    <div class="hsla-colors">
+      <p>HSLA COLORS</p>
+        <div id="hsla1">Green</div>
+        <div id="hsla2">Light Green</div>
+        <div id="hsla3">Dark Green</div>
+        <div id="hsla4">Pastel Green</div>
+        <div id="hsla5">Violet</div>
+        <div id="hsla6">Pastel Violet</div>
+    </div>
+    <br>
+    <hr/>
+
+    <div class="grad-colors">
+      <p>GRADIENTS</p>
+        <div id="grad1">ONE</div>
+        <div id="grad2">TWO</div>
+        <div id="grad3">THREE</div>
+        <div id="grad4">FOUR</div>
+        <div id="grad5">FIVE</div>
+        <div id="grad6">SIX</div>
+        <div id="grad7">SEVEN</div>
+        <div id="grad8">EIGHT</div>
+        <div id="grad9">NINE</div>
+        <div id="grad10">TEN</div>
+        <div id="grad11">ELEVEN</div>
+        <div id="grad12">TWELVE</div>
+    </div>
+    <br>
+    <hr/>
+
+    <div id="boxshadow">
+      <img src="https://res.cloudinary.com/swy/image/upload/v1499749852/images/school-bus.svg" alt="Schoolbus" width="400" height="250">
+    </div>
+    <br>
+    <hr/>
+
+
+    <p class="anim-trans">CSS TRANSITIONS</p>
+    <div class="transitions">
+      <div class="trans1">Watch Me</div>
+      <div class="trans2">Linear</div>
+      <div class="trans3">Ease</div>
+      <div class="trans4">Ease-In</div>
+      <div class="trans5">Ease-Out</div>
+      <div class="trans6">Ease-In-Out</div>
+      <div class="trans7">Delay</div>
+      <div class="trans8">Check Me Out</div>
+    </div>
+    <br>
+    <hr/>
+
+    <button class="button-active">Active Button</button>
+    <button class="button disabled">Disabled Button</button>
+
+    <p class="anim-trans">CSS ANIMATIONS</p>
+    <div class="animations">
+      <div class="anim1">one</div>
+      <div class="anim2">two</div>
+      <div class="anim3">three</div>
+      <div class="anim4">four</div>
+      <div class="anim5">five</div>
+      <div class="anim6">six</div>
+      <div class="anim7">seven</div>
+      <div class="anim8">eight</div>
+    </div>
+    <br>
+    <div class="animations2">
+      <div class="anim9">nine</div>
+      <div class="anim10">ten</div>
+    </div>
+    <br>
+    <hr/>
+    <div class="animations3">
+      <div class="anim11">eleven</div>
+    </div>
+    <br>
+    <hr/>
+
+    <div class="image-filters">
+      <div class="light-house">
+        <img src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="blur" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="brightness" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="sepia" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+      </div>
+      <div class="light-house">
+        <img class="contrast" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="grayscale" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="huerotate" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="shadow" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+      </div>
+      <div class="light-house">
+        <img class="invert" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="opacity" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="saturate" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+        <img class="pilolo" src="https://res.cloudinary.com/swy/image/upload/v1499750283/images/lighthouse.svg" alt="LightHouse">
+      </div>
+    </div>
+    <br>
+    <hr/>
+
+
+    <div class="image-fade">
+      <div class="fade-box">
+        <img class="box-image" src="https://res.cloudinary.com/swy/image/upload/v1499750320/images/pexels-photo-62408.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="topper">
+          <div class="text1">Lefter</div>
+        </div>
+      </div>
+
+      <div class="fade-box">
+        <img class="box-image2" src="https://res.cloudinary.com/swy/image/upload/v1499750321/images/pexels-photo-62468.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="middler">
+          <div class="text2">Middler</div>
+        </div>
+      </div>
+
+      <div class="fade-box">
+        <img class="box-image3" src="https://res.cloudinary.com/swy/image/upload/v1499750322/images/pexels-photo-65121.jpg" alt="Avatar" class="image" style="width:100%">
+        <div class="bottomer">
+          <div class="text3">Righter</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr/>
+
+    <div class="mdquery"> 
+      <ul>
+        <li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+        <li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+        <li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+      </ul>
+    </div>
+    <br>
+    <hr/>
+
+
+    <div id="footer">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+
+  </body>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+</html>

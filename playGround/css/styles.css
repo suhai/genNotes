@@ -1,0 +1,1368 @@
+/* MY CSS QUICK REFERENCE */
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
+/* pre {
+  width: 100%;
+  flex: 1;
+} */
+#C4 {
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+body {
+  background: #d0d0d0;
+  border: 15px solid black;
+  padding: 5px;
+}
+/* HORIZONTAL RULE */
+
+.header {
+  text-align: center;
+}
+
+.container {
+  max-width: 750px;
+  margin: 20px auto 0 auto;
+  padding: 30px;
+  background-color: #FFF;
+}
+
+.form-row {
+  padding: 10px 0;
+  display: flex;
+}
+
+.form-row label {
+  padding-right: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+/* HORIZONTAL RULE */
+
+
+.local-storage p {
+  background-color: hsla(120, 100%, 50%, 0.3);
+} 
+
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+/* HORIZONTAL RULE */
+
+
+.img-gallery {
+  margin: auto;
+  /* height: 250px; */
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  /* width: 350px;
+  height: 200px; */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+div.gallery {
+  margin: auto;
+  border: 5px solid #ccc;
+  float: left;
+  width: 180px;
+  padding: 5px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+input:focus {
+  background: salmon;
+}
+/* HORIZONTAL RULE */
+
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+/* img .img2 {
+  position: absolute;
+  width: 100px;
+  height: 140px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+} */
+
+a:link {
+  color: hotpink;
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: green; 
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: cyan;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#map {
+  background-color: lightgrey;
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
+}
+
+.indent p {
+  text-indent: 50px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  line-height: 2;
+  direction: rtl;
+  word-spacing: 10px;
+}
+
+.us-states li:first-child {
+  color: orange;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.us-states li:nth-child(4n+2) {
+  color: #0B00FF;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+.us-states li:nth-child(even) {
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.us-states li:nth-child(odd) {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.us-states li:nth-child(7) {
+  color: #FF0004;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  /* visibility: hidden; */
+}
+
+.us-states li:last-child {
+  color: #2FFF00;
+  font-family: Courier New, Courier, monospace;
+  font-weight: normal;
+}
+/* #myCanvas {
+  background-color: lightgrey;
+  width: 200px;
+  height: 100px;
+  border: 5px dashed #6120B0;
+  padding: 15px;
+  margin: 25px;
+} */
+
+.text-justify {
+  border: 3px solid black;
+  padding: 5px 5px;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.text-justify > p:first-child {
+  /* text-decoration: overline; */
+  /* text-decoration: line-through; */
+  text-decoration: underline;
+  text-align: center; 
+  color: maroon;
+  text-transform: uppercase;
+  text-shadow: 3px 2px #fff;
+  font-style: oblique;
+  font-weight: bold;
+  /* font-style: italic;
+  font-style: normal; */
+  /* display: inline;
+  background-color: yellow;   */
+}
+/* HORIZONTAL RULE */
+
+
+article {
+  column-count: 3;
+  column-gap: 30px;
+  column-rule: 2px solid coral;
+}
+
+.textbox {
+  border: 2px solid maroon;
+  width: 200px;
+  height: 150px;
+  overflow: auto;
+  resize: both;
+}
+
+.textbox textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-container {
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+  width: 100%;
+  /* height: 450px; */
+  background-color: #fff;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+}
+
+
+.first {
+  order: -1;
+}
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: #554;
+  margin: 10px;
+}
+
+.text-justify p:not(:first-child):first-letter { 
+  font-size: 200%;
+  color: #8A2BE2;
+  text-transform: capitalize;
+}
+
+.linker {
+  height: 500px;
+  width: 80%;
+  margin-left: 10%;
+  border: 5px solid black;
+}
+
+.my-iframe {
+  max-width: 500px;
+  height: 350px;
+  margin: 10px 10px;
+  display: flex;
+}
+
+iframe {
+  width: 100%;
+  height: 85%;
+  margin-bottom: 5px;
+}
+
+.iframer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 5px; 
+  border: 5px solid #171700;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+  /* outline: 5px dotted red; */
+ 
+}
+/* HORIZONTAL RULE */
+
+
+mark {
+  background-color: tomato;
+}
+
+table {
+  width:100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: hotpink;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+  background-color:#fff;
+}
+
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+
+table#t01 tr:hover {
+  background-color: hotpink;
+}
+
+/* tr#header {
+  position: fixed;
+} */
+
+.pretty-table {
+  /* ensures scrolling when too small*/
+  overflow-x:auto;
+  max-height: 300px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+div.cities {
+  background-color: black;
+  color: white;
+  margin: 20px 0 20px 0;
+  padding: 20px;
+} 
+
+.fline::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+.fline::first-letter {
+  color: #44FF00;
+  
+}
+/* HORIZONTAL RULE */
+
+/* h1::before {
+  content: "Read this: ";
+  content: url(smiley.gif);
+}
+
+h1::after {
+  content: "Did you?";
+} */
+
+
+/* #bottom-js {
+
+} */
+
+.border-test {
+  border-style: dotted dashed solid double;
+}
+
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+#footer ul {
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+#footer li {
+  float: left;
+}
+/* HORIZONTAL RULE */
+
+
+#div1 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin-bottom: 30px;
+}
+
+#drag1 {
+  width: 100%;
+}
+
+.font-aw {
+  text-align: center;
+  /* margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* clear: both; */
+}
+/* HORIZONTAL RULE */
+
+
+/*Combinators*/
+/* selects all <p> elements inside a .combinator */
+.combinator1 p {
+  background-color: #ff5412;
+  border-style: groove;
+  border-width: 5px;
+  border-color: red green blue yellow;
+  border-radius: 5px;
+  margin: 20px 50px 30px 70px;
+}
+
+/* selects all <p> elements that are immediate children of a .combinator2 */
+.combinator2 > p {
+  background-color: #005412;
+  /* border-style: ridge; */
+  border-width: medium;
+  border-top-style: ridge;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: none;
+  border-radius: 10px;
+  margin: auto;
+  min-width: 100px;
+  min-height: 5px;
+}
+
+/* selects all <p1> elements that are placed immediately after a .combinator3 */
+.combinator3 {
+  margin-left: 100px; 
+} 
+
+.combinator3 + p {
+  background-color: #735412;
+  border-style: inset;
+  /* border-style: hidden; */
+  border-width: 2px 10px 4px 20px;
+  border-radius: 15px;
+  max-width: 800px;
+  max-height: 100px;
+}
+
+p.two {
+  margin-left: inherit;
+}
+
+/* selects all <p> elements that are siblings of a .combinator4 */
+dodo {
+  display: block;
+  height: 20px;
+  width: 100px;
+  background-color: powderblue;
+}
+
+.combinator4 ~ dodo {
+  background-color: #00ee12;
+  border-style: outset;
+  /* border-style: none; */
+  margin: 10px 150px;
+  padding: 2px 5px 10px 15px;
+}
+
+
+.fa-cloud {
+  color: turquoise;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.fa-card {
+  color: black;
+}
+
+.fa-file {
+  color: blue;
+}
+
+.fa-bars {
+  color: green;
+}
+/* HORIZONTAL RULE */
+
+
+
+/*editable note*/
+note-taking {
+  font-family: Tahoma;
+  line-height:2em;
+  background:#f4f4f4;
+}
+
+note-head, note-butt {
+  text-align: center;
+}
+
+
+#container2 {
+  width:400px;
+  margin:20px auto;
+  background: #FFFFA5;
+  overflow:hidden;
+  padding:10px;
+}
+
+.clear a {
+  text-decoration: none;
+  background:#333;
+  color:#fff;
+  padding:10px;
+}
+/* HORIZONTAL RULE */
+
+
+
+/* ROUNDED BORDERS */
+.rounded-borders {
+  margin: 20px;
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.rounded-borders div {
+  padding: 1em; 
+  border: 1em solid black;
+  margin-left: 1.5em;
+  display: inline-block;
+  height: 5em;
+  width: 15%;
+}
+
+.rounded-borders #rcorners1 {
+  border-radius: 15px 50px 30px 5px;
+  background: #AD2096;
+}
+
+.rounded-borders #rcorners2 {
+  border-radius: 15px 50px 30px;
+  background: #0F857E;
+}
+
+.rounded-borders #rcorners3 {
+  border-radius: 15px 50px;
+  background: #CDE8A8;
+}
+
+.rounded-borders #rcorners4 {
+  border-radius: 50%;
+  background: #521726;
+} 
+/* HORIZONTAL RULE */
+
+
+
+/* MULTI BACKGROUND IMAGES*/
+#multi-bkgrnd {
+  /* background-image: url(https://res.cloudinary.com/swy/image/upload/v1499749852/images/school-bus.svg), url(https://res.cloudinary.com/swy/image/upload/v1499749836/images/desk.svg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat repeat;
+  padding: 5px; */
+
+  background: url(https://res.cloudinary.com/swy/image/upload/v1499749852/images/school-bus.svg) left top no-repeat, url(https://res.cloudinary.com/swy/image/upload/v1499749836/images/desk.svg) right bottom no-repeat, url(https://res.cloudinary.com/swy/image/upload/v1499749889/images/brickwall.png) left top repeat;
+  padding: 15px;
+  background-size: 50px, 130px, auto;
+}
+/* HORIZONTAL RULE */
+
+
+
+/* HSLA*/
+.hsla-colors p {
+  text-align: center;
+}
+
+.hsla-colors div {
+  width: 98%;
+  margin: auto;
+  text-align: center;
+  padding: 1% 0;
+}
+
+#hsla1 {
+  background-color:rgba(39, 208, 39, 0.30);  
+}
+
+#hsla2 {
+  background-color:hsla(120, 100%, 75%, 0.3);
+}
+
+#hsla3 {
+  background-color:hsla(120, 100%, 25%, 0.3);
+}
+
+#hsla4 {
+  background-color:hsla(120, 60%, 70%, 0.3);
+}
+
+#hsla5 {
+  background-color:hsla(290, 100%, 50%, 0.3);
+}
+
+#hsla6 {
+  background-color:hsla(290, 60%, 70%, 0.3);
+}
+/* HORIZONTAL RULE */
+
+
+
+/* Gradients*/
+.grad-colors {
+  width: 100%;
+  /* height: 1500px; */
+  padding: 10px auto;
+}
+
+.grad-colors p {
+  text-align: center;
+}
+
+.grad-colors div {
+  height: 5em;
+  width: 98%;
+  margin: 0.5em auto;
+  text-align: center;
+  padding: 1%;
+}
+
+#grad1 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+}
+
+#grad2 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red , yellow); /* For Safari */
+  background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 */
+  background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 */
+  background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+#grad3 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #00BCFF, #212101); /* For Safari */
+  background: -o-linear-gradient(bottom right, #00BCFF, #212101); /* For Opera 11 */
+  background: -moz-linear-gradient(bottom right, #00BCFF, #212101); /* For Firefox*/
+  background: linear-gradient(to bottom right, #00BCFF, #212101); /* Standard */
+}
+
+#grad4 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet); /* For Opera 11.1 to 12.0 */
+  background: -o-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet); /* For Fx 3.6 to 15 */
+  background: -moz-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet); /* Standard syntax */
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+
+#grad5 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
+}
+
+#grad6 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-repeating-linear-gradient(salmon, turquoise 10%, black 20%);
+  background: -o-repeating-linear-gradient(salmon, turquoise 10%, black 20%);
+  background: -moz-repeating-linear-gradient(salmon, turquoise 10%, black 20%);
+  background: repeating-linear-gradient(salmon, turquoise 10%, black 20%);
+}
+
+#grad7 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(red, yellow, green); /* Safari 5.1 */
+  background: -o-radial-gradient(red, yellow, green); /* For Opera 11.6 */
+  background: -moz-radial-gradient(red, yellow, green); /* For Firefox 3.6  */
+  background: radial-gradient(red, yellow, green); /* Standard syntax */
+}
+
+#grad8 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(red 5%, yellow 15%, green 60%); /* Safar*/
+  background: -o-radial-gradient(red 5%, yellow 15%, green 60%); /* For Opera */
+  background: -moz-radial-gradient(red 5%, yellow 15%, green 60%); /* */
+  background: radial-gradient(red 5%, yellow 15%, green 60%); /* Standard */
+}
+
+#grad9 {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, orange, yellow, #40E0CF); /* Safari */
+  background: -o-radial-gradient(circle, orange, yellow, #40E0CF); /* Opera 11.6 */
+  background: -moz-radial-gradient(circle, orange, yellow, #40E0CF); /* Firefox 3.6*/
+  background: radial-gradient(circle, orange, yellow, #40E0CF); /* Standard syntax */
+}
+
+#grad10 {
+  background: -webkit-radial-gradient(60% 55%, farthest-side, tomato, yellow, black); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(60% 55%, farthest-side, tomato, yellow, black); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(60% 55%, farthest-side, tomato, yellow, black); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(farthest-side at 60% 55%, tomato, yellow, black); /* Standard syntax (must be last) */
+}
+
+#grad11 {
+  background: -webkit-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(60% 55%, farthest-corner, red, yellow, black); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(farthest-corner at 60% 55%, red, yellow, black); /* Standard syntax (must be last) */
+}
+
+#grad12 {
+  background: -webkit-repeating-radial-gradient(salmon, yellow 10%, green 15%); /* For Safari 5.1 to 6.0 */
+  background: -o-repeating-radial-gradient(salmon, yellow 10%, green 15%); /* For Opera 11.6 to 12.0 */
+  background: -moz-repeating-radial-gradient(salmon, yellow 10%, green 15%); /* For Firefox 3.6 to 15 */
+  background: repeating-radial-gradient(salmon, yellow 10%, green 15%); /* Standard syntax (must be last) */
+}
+
+
+/* BOX SHADOW */
+#boxshadow {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  display: flex;
+}
+
+#boxshadow img {
+  height: 80%;
+  width: 50%;
+  padding: 3em auto;
+  margin: auto 3em;
+  border: 10px solid #8a4419;
+  border-style: inset;
+  flex: 1;
+}
+
+#boxshadow::after {
+  content: '';
+  position: absolute;
+  z-index: -1; /* hide shadow behind image */
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);                
+  width: 70%; 
+  left: 15%; /* one half of the remaining 30% */
+  /* height: 100px; */
+  bottom: 0;
+}
+/* HORIZONTAL RULE */
+
+
+
+/* CSS TRANSITIONS */
+.anim-trans{ 
+  text-align: center;
+}
+
+.transitions {
+  display: flex;
+  flex-direction: column;
+}
+
+
+div.transitions * {
+  width: 100px;
+  height: 100px;
+  border: 10px solid black;
+  -webkit-transition: width 5s; /* Safari */
+  transition: width 5s;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-basis: 10%;
+  margin-bottom: 10px;
+}
+
+
+div.transitions *:hover {
+  width: 300px;
+}
+
+
+div.trans1 {
+  background: rgba(0, 157, 255, 0.65);
+  -webkit-transition: width 5s, height 10s; /* For Safari 3.1 to 6.0 */
+  transition: width 5s, height 10s;
+}
+
+div.trans1:hover {
+  width: 100%;
+  height: 300px;
+}
+
+
+div.trans2 {
+  background: red;
+  transition-timing-function: linear;
+}
+
+div.trans3 {
+  background: turquoise;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+div.trans4 {
+  background: gray;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+div.trans5 {
+  background: blue;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+div.trans6 {
+  background: orange;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+div.trans7 {
+  background: brown;
+  -webkit-transition: width 3s; /* Safari */
+  -webkit-transition-delay: 1s; /* Safari */
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+
+div.trans8 {
+  background: greenyellow;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div.trans8:hover {
+  width: 300px;
+  height: 300px;
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
+}
+/* HORIZONTAL RULE */
+
+
+/* CSS ANIMATIONS */
+.animations {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+div.animations * {
+  /* width: 100px;
+  height: 100px; */
+  font-size: 20px;
+  animation-duration: 10s;
+  padding: 40px;
+  margin: auto;
+}
+
+/* div.animationss *:hover {
+ 
+} */
+
+/* Safari 4.0 - 8.0 */
+/* @-webkit-keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+} */
+
+/* Standard syntax */
+@keyframes example1 {
+  from {background-color: turquoise;}
+  to {background-color: yellow;}
+}
+div.anim1 {
+  border: 10px solid #FF4400;
+  animation-name: example1;
+  /* Safari 4.0 - 8.0 */
+  /* -webkit-animation-name: example1;  */
+}
+
+@keyframes example2 {
+  from {background-color: red;}
+  to {background-color: green;}
+}
+div.anim2 {
+  border: 10px solid turquoise;
+  animation-name: example2;
+}
+
+@keyframes example3 {
+  from {background-color: white;}
+  to {background-color: salmon;}
+}
+div.anim3 {
+  border: 10px solid grey;
+  animation-name: example3;
+}
+
+@keyframes example4{
+  from {background-color: grey;}
+  to {background-color: aquamarine;}
+}
+div.anim4 {
+  border: 10px solid black;
+  animation-name: example4;
+}
+
+@keyframes example5 {
+  from {background-color: orange;}
+  to {background-color: green;}
+}
+div.anim5 {
+  border: 10px solid white;
+  animation-name: example5;
+}
+
+@keyframes example6 {
+  from {background-color: turquoise;}
+  to {background-color: maroon;}
+}
+div.anim6 {
+  border: 10px solid salmon;
+  animation-name: example6;
+}
+
+@keyframes example7 {
+  from {background-color: black;}
+  to {background-color: greenyellow;}
+}
+div.anim7 {
+  border: 10px solid seashell;
+  animation-name: example7;
+}
+
+@keyframes example8 {
+  from {background-color: cyan;}
+  to {background-color: red;}
+}
+div.anim8 {
+  border: 10px solid greenyellow;
+  animation-name: example8;
+}
+/* HORIZONTAL RULE */
+
+
+
+/* CSS ANIMATIONS 2 */
+.animations2 {
+  margin-bottom: 300px;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+@keyframes example9 {
+  0% {background-color: red;}
+  25% {background-color: yellow;}
+  50% {background-color: blue;}
+  100% {background-color: green;}
+}
+div.anim9 {
+  width: 50px;
+  height: 50px;
+  border: 10px solid fuchsia;
+  background-color: plum;
+  text-align: center;
+  /* flex: 1; */
+  position: relative;
+  animation-duration: 10s;
+  animation-name: example9;
+}
+
+@keyframes example10 {
+  0% {background-color:red; left:0px; top:0px;}
+  12.5% {background-color:yellow; left:400px; top:0px;}
+  25% {background-color:blue; left:400px; top:300px;}
+  37.5% {background-color:green; left:0px; top:300px;}
+  50% {background-color:red; left:0px; top:0px;}
+  62.5% {background-color:red; left:-400px; top:0px;}
+  75% {background-color:yellow; left:-400px; top:300px;}
+  87.5% {background-color:blue; left:0px; top:300px;}
+  100% {background-color:green; left:0px; top:0px;}
+}
+div.anim10 {
+  width: 50px;
+  height: 50px;
+  border: 10px solid darkolivegreen;
+  background-color: lavender;
+  text-align: center;
+  /* flex: 1; */
+  margin-left: 40%;
+  position: relative;
+  animation-duration: 10s;
+  animation-name: example10;
+  animation-iteration-count: 3;
+  /* animation-direction: alternate; */
+  animation-direction: alternate-reverse;
+  /* animation-direction: reverse; */
+}
+/* HORIZONTAL RULE */
+
+
+
+/* CSS ANIMATIONS 3 */
+.animations3 {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@keyframes example11 {
+  from {left: 0px; top: 0px;}
+  to {left: 90%; top: 98%;}
+}
+div.anim11 {
+  height: 100px;
+  width: 100px;
+  background-color: lemonchiffon;
+  font-weight: bold;
+  position: relative;
+  animation: example11 6s infinite;
+  -webkit-animation: example11 6s infinite; /* Safari 4.0 - 8.0 */
+}
+/* HORIZONTAL RULE */
+
+
+
+
+/*POLAROID IMAGES*/
+.the-polaroid {
+  width: 100%;
+  display: flex;
+}
+
+div.polaroid {
+  flex: 1;
+  margin: auto 0.5em;
+  background-color: lavenderblush;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 15px;
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+}
+
+div.polaroid-text {
+  text-align: center;
+  /* padding: 10px 20px; */
+}
+/* HORIZONTAL RULE */
+
+
+
+/* IMAGE FILTERS */
+.image-filters {
+  
+}
+
+.light-house {
+  /* height: 150px; */
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.light-house img {
+  /* width: 20%;
+  height: 90%; */
+  /* float: left;  */
+  /* margin: 1em 3em; */
+  flex: 1;
+  /* max-width: 235px; */
+}
+
+.blur {
+  -webkit-filter: blur(4px);filter: blur(4px);
+}
+
+.brightness {
+  -webkit-filter: brightness(250%);filter: brightness(250%);
+}
+
+.contrast {
+  -webkit-filter: contrast(180%);filter: contrast(180%);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);filter: grayscale(100%);
+}
+
+.huerotate {
+  -webkit-filter: hue-rotate(180deg);filter: hue-rotate(180deg);
+}
+
+.invert {
+  -webkit-filter: invert(100%);filter: invert(100%);
+}
+
+.opacity {
+  -webkit-filter: opacity(50%);filter: opacity(50%);
+}
+
+.saturate {
+  -webkit-filter: saturate(7); filter: saturate(7);
+}
+
+.sepia {
+  -webkit-filter: sepia(100%);filter: sepia(100%);
+}
+
+.shadow {
+  -webkit-filter: drop-shadow(8px 8px 10px green);
+  filter: drop-shadow(8px 8px 10px green);
+}
+
+.pilolo {
+  -webkit-filter: drop-shadow(8px 8px 10px hotpink);
+  filter: drop-shadow(8px 8px 10px hotpink);
+}
+/* HORIZONTAL RULE */
+
+
+/*IMAGE FADE*/
+.image-fade {
+  display: flex;
+  /* width: 100%;
+  height: 200px;
+  background-color: black; */
+}
+
+.fade-box {
+  position: relative;
+  flex: 1;
+  padding: .5em;
+  box-sizing: border-box;
+  flex-basis: 5%;
+  margin: auto;
+}
+
+.box-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.topper {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.fade-box:hover .box-image {
+  opacity: 0.3;
+}
+
+.fade-box:hover .topper {
+  opacity: 1;
+}
+
+.text1 {
+  background-color: maroon;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/* HORIZONTAL RULE */
+
+
+
+.box-image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.middler {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: turquoise;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.fade-box:hover .middler {
+  bottom: 0;
+  height: 100%;
+}
+
+.text2 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/* HORIZONTAL RULE */
+
+
+.box-image3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bottomer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: salmon;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.fade-box:hover .bottomer {
+  width: 100%;
+}
+
+.text3 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.button-active {
+  background-color: #1676B2; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.disabled {
+  padding: 15px 32px;
+  text-align: center;
+  background-color: #1676B2; 
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* HORIZONTAL RULE */
+
+
+
+
+.mdquery ul li a {
+  color: tomato;
+  text-decoration: none;
+  padding: 3px; 
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+      background: lightgreen;
+  }
+}
+
+
+@media screen and (max-width: 699px) and (min-width: 520px) {
+  ul li a {
+      padding-left: 30px;
+      background: url() left center no-repeat;
+  }
+}
+/* HORIZONTAL RULE */

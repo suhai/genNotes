@@ -1,0 +1,1 @@
+This is repo for me to revisit HTML, CSS, JavaScript, and http Server from a rudimentary level.
